@@ -15,20 +15,132 @@
 
     <body>
 
+
+        <!--Navbari-->
+
         <nav>
-            <hi>Elion Rrahmani</hi>
+            <h1>Elion Rrahmani</h1>
             <ul class="navigation">
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+
             <button class="burger-menu" id="burger-menu">
                 <ion-icon class="bars" name="menu-outline"></ion-icon>
             </button>
+
         </nav>
 
+
+        <!--Seksioni fotografise dhe biografise-->
+
+        <section class="hero" id="about">
+            <img
+            src="assets/images/errahmani.jpg"
+            alt="elion-rrahmani"
+            loading="lazy"
+            class="hero-img" />
+
+            <div class="bio animate_animated animate_shakeX">
+                <h2 class="bio-title">About Me</h2>
+                <p class="bio-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ea. Libero, quo quos. Id nisi vel ea! Voluptate repudiandae est earum qui. Cupiditate omnis officiis et quaerat dignissimos explicabo deserunt!
+                </p>
+            </div>
+
+        </section>
+
+
+        <!--Seksioni i skillsave-->
+
+        <section class="skills" id="skills">
+            <h2 class="skills-header">My Skills</h2>
+
+            <div class="skills-wrapper">
+                <div class="first-set animate__animated animate__pulse">
+                    <img src="assets/icons/icons8-html-5.svg"
+                    alt="html5"
+                    loading="lazy"
+                    class="icon icon-card" />
+
+                    <img src ="assets/icons/icons8-css3.svg"
+                    alt="css3"
+                    loading="lazy"
+                    class="icon icon-card" />
+
+                    <img src="assets/icons/icons8-javascript.svg"
+                    alt="js"
+                    loading="lazy"
+                    class="icon icon-card" />
+
+                </div>
+
+                <div class="second-set animate__animated animate__pulse">
+                <img src="assets/icons/icons8-react.svg"
+                alt="react"
+                loading="lazy"
+                class="icon icon-card"/>
+
+                <img src="assets/icons/icons8-kotlin.svg"
+                alt="kotlin"
+                loading="lazy"
+                class="icon icon-card" />
+
+                <img src="assets/icons/icons8-my-sql.svg"
+                alt="mysql"
+                loading="lazy"
+                class="icon icon-card" />
+                </div>
+            </div>
         
+        </section>
+
+
+        <!--Projektet-->
+
+        <section class="projects" id="projects">
+            <h2 class="projects-title">My Projects</h2>
+            <div class="projects-container">
+                <p>Projects coming soon...</p>
+            </div>
+        </section>
+
+
+<!--Kontakti-->      
+
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-form-container">
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xzbwyzby" method="POST">
+                       
+                        <div class = "form-control">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="sender-name" placeholder="Enter your name" class="input-field" required />
+                        </div>
+
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="sender-email" placeholder="Enter your email" class="input-field" required />
+                        </div>
+
+                        <div class="form-control" >
+                            <label for="message">Message</label>
+                            <textarea id="message" cols="40" rows="8" placeholder="Write your message..." name="message" class="input-field" required></textarea>
+                        </div>
+
+                        <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
 
 
 
