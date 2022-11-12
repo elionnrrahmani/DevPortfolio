@@ -174,8 +174,7 @@ nav ul li {
 
 .contact {
     margin-top: 2rem;
-    justify-content: center;
-    align-items: center;
+   
 }
 
 .contact h2 {
@@ -239,7 +238,7 @@ nav ul li {
 .socialmedia {
     display:flex;
     flex-direction: row;
-    position: relative;
+    position: absolute;
     right: 10%;
     float: right;
     justify-content: center;
