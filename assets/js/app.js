@@ -23,3 +23,16 @@ link.addEventListener("click", () => {
     ul.classList.remove("show");
 })
 );
+
+const card = document.querySelector('.card');
+const update = ({x,y}) => {
+    const bounds = card.getBoundingClientRect()
+    const posX = x-bounds.x
+    const posY = y-bounds.y
+    const ratioX = posX / bounds.width
+    const ratioY = posY / bounds.height
+    card.style.setProperty('--ratio-x', ratioX)
+    card.style.setProperty('--ratio-y', ratioY)
+}
+
+card.addEventListener('pointermove', update)
