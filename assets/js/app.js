@@ -24,15 +24,13 @@ link.addEventListener("click", () => {
 })
 );
 
-const card = document.querySelector('.card');
-const update = ({x,y}) => {
-    const bounds = card.getBoundingClientRect()
-    const posX = x-bounds.x
-    const posY = y-bounds.y
-    const ratioX = posX / bounds.width
-    const ratioY = posY / bounds.height
-    card.style.setProperty('--ratio-x', ratioX)
-    card.style.setProperty('--ratio-y', ratioY)
-}
+var dob = new Date("2002, 6, 14");
+var month_diff = Date.now() - dob.getTime();
 
-card.addEventListener('pointermove', update)
+var age_dt = new Date(month_diff);
+var year = age_dt.getUTCFullYear();
+
+var age = Math.abs(year-1970);
+
+document.getElementById("age").innerHTML=age;
+
